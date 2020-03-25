@@ -1,6 +1,6 @@
 # ZooTopia
 
-Lab04 - OOP and Interface
+Lab6,7 - OOP and Interface
 
 *Author: Jin Kim*
 
@@ -41,10 +41,11 @@ Then select and open ```lab6-7-OOP-and-Interface.sln```
 ### Visuals
 
 #### UML Diagram
-![UML Diagram](./assets/images/Zootopia.png)
+![UML Diagram](./assets/images/NewZootopia.png)
 
 ---
 
 ### Change Log
+1.2: *Revised existing UML to label base and derived classes* - March 26 2020
 1.1: *Created libary of animals in the classes* - March 25 2020  
 1.0: *Created Repo, structuralized the application* - March 25 2020  

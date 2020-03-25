@@ -130,8 +130,18 @@ namespace AnimalTestingUnit
 
 
             Assert.Equal("Rawr", carnivore[2].Bark());
-
         }
+
+        [Fact]
+        public void WhatTraitCanIUseFromAnimalFromFish()
+        {
+            Animal nemo = new ClownFish();
+
+            string whatDoesNemoSayWhenHeEats = nemo.Eating();
+
+            Assert.Equal("Hey I am eating here come back later", whatDoesNemoSayWhenHeEats);
+        }
+
 
     }
 }
