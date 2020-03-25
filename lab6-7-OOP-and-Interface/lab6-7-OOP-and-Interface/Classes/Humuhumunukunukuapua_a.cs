@@ -8,7 +8,7 @@ namespace lab6_7_OOP_and_Interface.Classes
     {
         public void AlohaKomoMai()
         {
-            Console.WriteLine("Say the fish name correctly, I dare you !!");
+            Console.WriteLine("Say the fish name correctly, I dare you !!"); 
         }
     }
 }
