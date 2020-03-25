@@ -9,5 +9,6 @@ namespace lab6_7_OOP_and_Interface.Classes
         public override bool Hibernation { get; set; } = true;
         public override bool PackAnimals { get; set; } = false;
 
+        public override string Name { get; set; } = "Bear beets battle star galactica";
     }
 }
