@@ -43,9 +43,17 @@ Then select and open ```lab6-7-OOP-and-Interface.sln```
 #### UML Diagram
 ![UML Diagram](./assets/images/NewZootopia.png)
 
+#### Appliation Running
+![Application](./assets/images/Appliation-running.png)
+
+#### Unit Test
+![Unit testing pass](./assets/images/unit-testing.png)
+
 ---
 
 ### Change Log
+1.4: *Implemented interface to the classes and unit test displays pass* March 26 2020
+1.3: *Link classes with inheritance and unit test passes* March 26 2020
 1.2: *Revised existing UML to label base and derived classes* - March 26 2020
 1.1: *Created libary of animals in the classes* - March 25 2020  
 1.0: *Created Repo, structuralized the application* - March 25 2020  
