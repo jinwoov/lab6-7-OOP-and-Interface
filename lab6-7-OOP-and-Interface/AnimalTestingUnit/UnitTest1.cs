@@ -162,5 +162,44 @@ namespace AnimalTestingUnit
             Assert.Equal("Theres food catch him", huh);
         }
 
+        [Fact]
+        public void TestingForPolymorphism()
+        {
+            ClownFish marlin = new ClownFish();
+
+            string whereIsDory =  marlin.Swimming();
+
+            Assert.DoesNotMatch("Just keep swimming", whereIsDory);
+        }
+
+        [Fact]
+        public void TestingIfOneOfConcretAnimalIsAnimal()
+        {
+            string whatDoesRabbitMakeWhenTheyJump = "";
+            Rabbit peter = new Rabbit();
+
+            if (peter is Animal)
+            {
+                whatDoesRabbitMakeWhenTheyJump = peter.Jumping();
+            }
+
+            Assert.Equal("Hip hop Hipty hop", whatDoesRabbitMakeWhenTheyJump);
+        }
+
+        [Fact]
+        public void TestingIfSharkIsMammal()
+        {
+            bool isIt = false;
+            GreatWhiteShark bruce = new GreatWhiteShark();
+
+            if (bruce is Mammal)
+            {
+                isIt = true;
+            }
+
+            Assert.False(isIt);
+        }
+
+
     }
 }

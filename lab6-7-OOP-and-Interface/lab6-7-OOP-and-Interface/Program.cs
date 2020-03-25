@@ -9,11 +9,11 @@ namespace lab6_7_OOP_and_Interface
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Inheritance Zone");
+            Console.WriteLine("Showing the example of inheritance");
             Classes();
+            Console.WriteLine("-----------------------------------");
 
-            Console.WriteLine("Interface Zone");
-
+            Console.WriteLine("Showing the example of interface");
             TheInterFace();
         }
 
