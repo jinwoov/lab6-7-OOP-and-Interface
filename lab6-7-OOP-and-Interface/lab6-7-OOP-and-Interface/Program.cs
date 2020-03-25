@@ -8,6 +8,8 @@ namespace lab6_7_OOP_and_Interface
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+
         }
     }
 }

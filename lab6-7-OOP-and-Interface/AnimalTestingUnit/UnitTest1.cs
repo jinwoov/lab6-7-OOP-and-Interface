@@ -85,5 +85,16 @@ namespace AnimalTestingUnit
 
             Assert.True(please);
         }
+
+        [Fact]
+        public void CowCanEatWhatFood()
+        {
+            Cow cow = new Cow();
+
+            Assert.Equal("Vegetation", cow.Food);
+        }
+
+        [Fact]
+        public void 
     }
 }
