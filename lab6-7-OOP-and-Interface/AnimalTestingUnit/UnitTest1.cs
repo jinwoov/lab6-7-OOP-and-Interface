@@ -35,6 +35,51 @@ namespace AnimalTestingUnit
         }
 
         [Fact]
+        public void WhatIsHabitatForLion()
+        {
+            Lion lion = new Lion();
+            string where = lion.Habitat;
+            string myGuess = "Land";
 
+            Assert.Equal(myGuess, where);
+        }
+
+        [Fact]
+        public void ForBruceTheWhiteSharkWhenHeSmellBloodInTheWater()
+        {
+            GreatWhiteShark bruce = new GreatWhiteShark();
+
+            string beforeOhNo = bruce.Food;
+
+            string ohNo = bruce.FishAreFriend();
+
+            Assert.DoesNotMatch(beforeOhNo, ohNo);
+            
+        }
+        
+        [Fact]
+        public void ShouldIkeepTheBlueGillsICaughtLastYear()
+        {
+            BlueGills blueGills = new BlueGills();
+
+            bool beforeTransition = blueGills.CatchRelease();
+
+            Assert.False(beforeTransition);
+        }
+
+        [Fact]
+        public void IsBearDomesticatable()
+        {
+            Bear bear = new Bear();
+            bool canIKeepTheCub = bear.Domesticatable;
+
+            Assert.False(canIKeepTheCub);
+        }
+
+        [Fact]
+        public void HowAboutPeterRabbitCanIKeepIt()
+        {
+            Rabbit peter = 
+        }
     }
 }

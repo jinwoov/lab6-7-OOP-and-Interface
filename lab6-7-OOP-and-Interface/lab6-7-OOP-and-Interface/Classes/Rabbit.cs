@@ -4,7 +4,7 @@ using System.Text;
 
 namespace lab6_7_OOP_and_Interface.Classes
 {
-    class Rabbit : Herbivore
+    public class Rabbit : Herbivore
     {
         public void Thumping()
         {
