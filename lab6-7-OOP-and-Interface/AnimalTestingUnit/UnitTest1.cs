@@ -103,5 +103,15 @@ namespace AnimalTestingUnit
 
             Assert.Equal("Warm", bloodType);
         }
+
+        [Fact]
+        public void FindingNemoQuoteCheckingItFromMarineClass()
+        {
+            ClownFish marlin = new ClownFish();
+
+            string quote = marlin.FishAreFriend();
+
+            Assert.Equal("Fishes are friend, Not food!", quote);
+        }
     }
 }
