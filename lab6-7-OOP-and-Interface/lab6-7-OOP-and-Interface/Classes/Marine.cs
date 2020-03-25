@@ -4,7 +4,7 @@ using System.Text;
 
 namespace lab6_7_OOP_and_Interface.Classes
 {
-    abstract class Marine : Fish
+    public abstract class Marine : Fish
     {
         public override string Food { get; set; } = "Coral Reef";
 

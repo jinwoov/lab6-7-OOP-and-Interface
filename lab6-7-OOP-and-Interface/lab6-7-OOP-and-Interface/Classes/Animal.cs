@@ -4,7 +4,7 @@ using System.Text;
 
 namespace lab6_7_OOP_and_Interface.Classes
 {
-    abstract class Animal
+    public abstract class Animal
     {
         public abstract string Food { get; set; }
         public virtual bool Domesticatable { get; set; } = false;

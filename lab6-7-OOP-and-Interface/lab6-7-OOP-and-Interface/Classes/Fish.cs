@@ -4,7 +4,7 @@ using System.Text;
 
 namespace lab6_7_OOP_and_Interface.Classes
 {
-    abstract class Fish : Animal
+    public abstract class Fish : Animal
     {
         public bool HasGill { get; set; } = true;
         public override string BloodTemperature { get; set; } = "Cold";

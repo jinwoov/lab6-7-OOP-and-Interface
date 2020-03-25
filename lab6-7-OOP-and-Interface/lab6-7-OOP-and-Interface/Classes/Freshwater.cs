@@ -4,7 +4,7 @@ using System.Text;
 
 namespace lab6_7_OOP_and_Interface.Classes
 {
-    abstract class Freshwater : Fish
+    public abstract class Freshwater : Fish
     {
         public bool LandAnimalEncounter { get; set; } = true;
 

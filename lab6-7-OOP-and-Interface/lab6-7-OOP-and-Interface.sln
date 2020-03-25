@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab6-7-OOP-and-Interface", "lab6-7-OOP-and-Interface\lab6-7-OOP-and-Interface.csproj", "{75E7138A-0CD1-4AF3-BD20-7FD9B96CC306}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalTestingUnit", "AnimalTestingUnit\AnimalTestingUnit.csproj", "{96220A8A-D5C1-4FEA-9E67-7F0FAE64EC4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{75E7138A-0CD1-4AF3-BD20-7FD9B96CC306}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75E7138A-0CD1-4AF3-BD20-7FD9B96CC306}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75E7138A-0CD1-4AF3-BD20-7FD9B96CC306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96220A8A-D5C1-4FEA-9E67-7F0FAE64EC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96220A8A-D5C1-4FEA-9E67-7F0FAE64EC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96220A8A-D5C1-4FEA-9E67-7F0FAE64EC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96220A8A-D5C1-4FEA-9E67-7F0FAE64EC4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
