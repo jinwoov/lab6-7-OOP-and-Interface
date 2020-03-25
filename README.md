@@ -37,6 +37,7 @@ In the `lab6-7-OOP-and-Interface`, navigate further into `lab6-7-OOP-and-Interfa
 
 Then select and open ```lab6-7-OOP-and-Interface.sln```
 
+---
 ### Visuals
 
 #### UML Diagram
