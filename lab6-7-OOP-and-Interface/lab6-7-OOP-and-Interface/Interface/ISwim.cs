@@ -11,7 +11,7 @@ namespace lab6_7_OOP_and_Interface.Interface
 
         void WiggleTail();
 
-        void SwimFast();
+        string SwimFast();
 
     }
 }

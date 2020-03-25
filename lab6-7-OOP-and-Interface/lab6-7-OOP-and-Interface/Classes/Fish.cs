@@ -33,9 +33,9 @@ namespace lab6_7_OOP_and_Interface.Classes
             Console.WriteLine("Wiggle Wiggle Wiggle dodododo");
         }
 
-        public void SwimFast()
+        public string SwimFast()
         {
-            Console.WriteLine("Theres food catch him");
+            return "Theres food catch him";
         }
     }
 }

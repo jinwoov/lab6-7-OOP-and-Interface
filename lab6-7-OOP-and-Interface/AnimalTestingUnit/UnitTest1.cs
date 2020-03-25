@@ -142,6 +142,25 @@ namespace AnimalTestingUnit
             Assert.Equal("Hey I am eating here come back later", whatDoesNemoSayWhenHeEats);
         }
 
+        [Fact]
+        public void CanIUseMethodFromInterFace()
+        {
+            Lion mufasa = new Lion();
+
+            string circleOfLife = mufasa.Attention();
+
+            Assert.Equal("Circle of Life", circleOfLife);
+        }
+
+        [Fact]
+        public void TestingInHeritance()
+        {
+            Humuhumunukunukuapua_a humu = new Humuhumunukunukuapua_a();
+
+            string huh = humu.SwimFast();
+
+            Assert.Equal("Theres food catch him", huh);
+        }
 
     }
 }

@@ -13,9 +13,9 @@ namespace lab6_7_OOP_and_Interface.Classes
         public override bool WasInJungleBook { get; set; } = false;
         public bool HasFin { get; set; } = false;
 
-        public void Attention()
+        public string Attention()
         {
-            Console.WriteLine("Circle of Life");
+            return "Circle of Life";
         }
 
         public void Hakunamatata()
@@ -28,9 +28,9 @@ namespace lab6_7_OOP_and_Interface.Classes
             Console.WriteLine("Duck Duck Run!");
         }
 
-        public void SwimFast()
+        public string SwimFast()
         {
-            Console.WriteLine("I dont swim, I eat");
+            return "I dont swim, I eat";
         }
 
         public void WiggleTail()

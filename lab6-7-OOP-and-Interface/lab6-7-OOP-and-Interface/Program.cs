@@ -21,10 +21,25 @@ namespace lab6_7_OOP_and_Interface
         {
             IKingOfAnimals[] king = new IKingOfAnimals[2];
 
+           
             king[0] = new Lion();
             king[1] = new GreatWhiteShark();
 
-            king[1].Attention();
+            for (int i = 0; i < king.Length; i++)
+            {
+                var kingDom = king[i];
+
+                if(kingDom is Lion)
+                {
+                    var simba = (Lion)kingDom;
+                    simba.Hakunamatata();
+                }
+                else
+                {
+                    var babyShark = (GreatWhiteShark)kingDom;
+                    babyShark.ThemeSong();
+                }
+            }
         }
 
         static void Classes()
