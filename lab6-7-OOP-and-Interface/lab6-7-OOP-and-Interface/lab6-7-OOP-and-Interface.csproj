@@ -6,8 +6,4 @@
     <RootNamespace>lab6_7_OOP_and_Interface</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Interface\" />
-  </ItemGroup>
-
 </Project>
