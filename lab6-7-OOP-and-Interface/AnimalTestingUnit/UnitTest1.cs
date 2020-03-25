@@ -79,7 +79,11 @@ namespace AnimalTestingUnit
         [Fact]
         public void HowAboutPeterRabbitCanIKeepIt()
         {
-            Rabbit peter = 
+            Rabbit peter = new Rabbit();
+
+            bool please = peter.Domesticatable;
+
+            Assert.True(please);
         }
     }
 }
