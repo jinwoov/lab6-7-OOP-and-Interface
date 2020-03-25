@@ -4,7 +4,7 @@ using System.Text;
 
 namespace lab6_7_OOP_and_Interface.Classes
 {
-    public abstract class Canivore : Mammal
+    public abstract class Carnivore : Mammal
     {
         public override sealed string Food { get; set; } = "Meat";
         public abstract bool Hibernation { get; set; }

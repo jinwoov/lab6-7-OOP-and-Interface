@@ -26,7 +26,7 @@ namespace AnimalTestingUnit
         }
 
         [Fact]
-        public void DoesShepHaveFourLegs()
+        public void DoesSheepHaveFourLegs()
         {
             Sheep sheep = new Sheep();
             int leg = sheep.LegAmount;
@@ -113,5 +113,25 @@ namespace AnimalTestingUnit
 
             Assert.Equal("Fishes are friend, Not food!", quote);
         }
+
+        [Fact]
+        public void IcanInstantiateSameGroupInHierchy()
+        {
+            Carnivore[] carnivore = new Carnivore[4];
+            Carnivore wolf = new Wolf();
+            Carnivore bear = new Bear();
+            Carnivore simba = new Lion();
+            Carnivore tiger = new Tiger();
+
+            carnivore[0] = wolf;
+            carnivore[1] = bear;
+            carnivore[2] = simba;
+            carnivore[3] = tiger;
+
+
+            Assert.Equal("Rawr", carnivore[2].Bark());
+
+        }
+
     }
 }
