@@ -26,7 +26,15 @@ namespace AnimalTestingUnit
         }
 
         [Fact]
+        public void DoesShepHaveFourLegs()
+        {
+            Sheep sheep = new Sheep();
+            int leg = sheep.LegAmount;
 
+            Assert.Equal(4, leg);
+        }
+
+        [Fact]
 
     }
 }

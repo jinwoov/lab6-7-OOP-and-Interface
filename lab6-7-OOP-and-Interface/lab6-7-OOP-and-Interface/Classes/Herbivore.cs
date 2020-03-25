@@ -4,7 +4,7 @@ using System.Text;
 
 namespace lab6_7_OOP_and_Interface.Classes
 {
-    abstract class Herbivore : Mammal
+    public abstract class Herbivore : Mammal
     {
         public override sealed string Food { get; set; } = "Vegetation";
         public override sealed bool Domesticatable { get; set; } = true;
