@@ -95,6 +95,13 @@ namespace AnimalTestingUnit
         }
 
         [Fact]
-        public void 
+        public void WhatBloodTempDoesTigerHave()
+        {
+            Tiger tiger = new Tiger();
+
+            string bloodType = tiger.BloodTemperature;
+
+            Assert.Equal("Warm", bloodType);
+        }
     }
 }
