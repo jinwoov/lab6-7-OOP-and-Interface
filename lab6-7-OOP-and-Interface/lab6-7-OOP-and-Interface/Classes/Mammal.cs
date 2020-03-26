@@ -24,8 +24,8 @@ namespace lab6_7_OOP_and_Interface.Classes
             Console.WriteLine($" {Name} is walking like a McJagger");
         }
 
-        // <summary>
-        /// Method that will be overriden from `Animal` class and will return different string;
+        /// <summary>
+        /// Method that originally from `Animal`, and it will be overriden and return a different string;
         /// </summary>
         public override sealed string Sleeping()
         {
