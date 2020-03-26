@@ -68,6 +68,9 @@ namespace lab6_7_OOP_and_Interface
             }
         }
         
+        /// <summary>
+        /// This method is showcase how polymorphism is effecting rabbit class. By overriding Jumping method in the rabbit, cow which inherited from Herbivore stays the same but rabbit is different.
+        /// </summary>
         static void Polymorphism()
         {
             Cow moo = new Cow();
