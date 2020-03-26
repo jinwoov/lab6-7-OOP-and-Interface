@@ -7,13 +7,97 @@ namespace AnimalTestingUnit
     public class UnitTest1
     {
         [Fact]
-        public void TestingForBarkFromMammal()
+        public void IsBearDomesticatable()
+        {
+            Bear bear = new Bear();
+            bool canIKeepTheCub = bear.Domesticatable;
+
+            Assert.False(canIKeepTheCub);
+        }
+
+        [Fact]
+        public void IsBearCampingDestroyerUnlikeTiger() 
+        {
+            Bear bear = new Bear();
+            bool canIKeepTheCub = bear.CampingCrasher;
+
+            Assert.True(canIKeepTheCub);
+        }
+
+        [Fact]
+        public void WhatBloodTempDoesTigerHave() 
+        {
+            Tiger tiger = new Tiger();
+
+            string bloodType = tiger.BloodTemperature;
+
+            Assert.Equal("Warm", bloodType);
+        }
+
+        [Fact]
+        public void CanTigerSleep() 
+        {
+            Tiger tiger = new Tiger();
+
+            string outcome = tiger.Sleeping();
+
+            Assert.Equal("Zzz to the dream land", outcome);
+        }
+
+        [Fact]
+        public void WhatIsHabitatForLion() 
+        {
+            Lion lion = new Lion();
+            string where = lion.Habitat;
+            string myGuess = "Land";
+
+            Assert.Equal(myGuess, where);
+        }
+
+        [Fact]
+        public void DoesLionHaveFourLeg()
+        {
+            Lion lion = new Lion();
+            bool result = false;
+            if(lion.LegAmount == 4)
+            {
+                result = true;
+            }
+
+            Assert.True(result);
+        }
+
+        [Fact]
+        public void TestingForBarkFromMammal() 
         {
             Wolf wolf = new Wolf();
             string anySound = wolf.Bark();
 
             Assert.Equal("Rawr", anySound);
         }
+
+        [Fact]
+        public void IsWolfPredatorOrPrey()
+        {
+            Wolf wolf = new Wolf();
+            var answer = 5;
+            if (wolf.PredatorPrey is "Predator")
+            {
+                answer -= 5;
+            }
+
+            Assert.Equal(0, answer);
+        }
+
+        [Fact]
+        public void DoesSheepHaveFourLegs()
+        {
+            Sheep sheep = new Sheep();
+            int leg = sheep.LegAmount;
+
+            Assert.Equal(4, leg);
+        }
+
 
         [Fact] //?
         public void DoesFishSleepWorldMystery()
@@ -23,25 +107,6 @@ namespace AnimalTestingUnit
             string finallySolved = tooLong.Sleeping();
 
             Assert.Equal("I dont sleep I keep my eyes wide open", finallySolved);
-        }
-
-        [Fact]
-        public void DoesShepHaveFourLegs()
-        {
-            Sheep sheep = new Sheep();
-            int leg = sheep.LegAmount;
-
-            Assert.Equal(4, leg);
-        }
-
-        [Fact]
-        public void WhatIsHabitatForLion()
-        {
-            Lion lion = new Lion();
-            string where = lion.Habitat;
-            string myGuess = "Land";
-
-            Assert.Equal(myGuess, where);
         }
 
         [Fact]
@@ -67,14 +132,7 @@ namespace AnimalTestingUnit
             Assert.False(beforeTransition);
         }
 
-        [Fact]
-        public void IsBearDomesticatable()
-        {
-            Bear bear = new Bear();
-            bool canIKeepTheCub = bear.Domesticatable;
 
-            Assert.False(canIKeepTheCub);
-        }
 
         [Fact]
         public void HowAboutPeterRabbitCanIKeepIt()
@@ -94,15 +152,6 @@ namespace AnimalTestingUnit
             Assert.Equal("Vegetation", cow.Food);
         }
 
-        [Fact]
-        public void WhatBloodTempDoesTigerHave()
-        {
-            Tiger tiger = new Tiger();
-
-            string bloodType = tiger.BloodTemperature;
-
-            Assert.Equal("Warm", bloodType);
-        }
 
         [Fact]
         public void FindingNemoQuoteCheckingItFromMarineClass()
@@ -113,5 +162,93 @@ namespace AnimalTestingUnit
 
             Assert.Equal("Fishes are friend, Not food!", quote);
         }
+
+        [Fact]
+        public void IcanInstantiateSameGroupInHierchy()
+        {
+            Carnivore[] carnivore = new Carnivore[4];
+            Carnivore wolf = new Wolf();
+            Carnivore bear = new Bear();
+            Carnivore simba = new Lion();
+            Carnivore tiger = new Tiger();
+
+            carnivore[0] = wolf;
+            carnivore[1] = bear;
+            carnivore[2] = simba;
+            carnivore[3] = tiger;
+
+
+            Assert.Equal("Rawr", carnivore[2].Bark());
+        }
+
+        [Fact]
+        public void WhatTraitCanIUseFromAnimalFromFish()
+        {
+            Animal nemo = new ClownFish();
+
+            string whatDoesNemoSayWhenHeEats = nemo.Eating();
+
+            Assert.Equal("Hey I am eating here come back later", whatDoesNemoSayWhenHeEats);
+        }
+
+        [Fact]
+        public void CanIUseMethodFromInterFace()
+        {
+            Lion mufasa = new Lion();
+
+            string circleOfLife = mufasa.Attention();
+
+            Assert.Equal("Circle of Life", circleOfLife);
+        }
+
+        [Fact]
+        public void TestingInHeritance()
+        {
+            Humuhumunukunukuapua_a humu = new Humuhumunukunukuapua_a();
+
+            string huh = humu.SwimFast();
+
+            Assert.Equal("Theres food catch him", huh);
+        }
+
+        [Fact]
+        public void TestingForPolymorphism()
+        {
+            ClownFish marlin = new ClownFish();
+
+            string whereIsDory =  marlin.Swimming();
+
+            Assert.DoesNotMatch("Just keep swimming", whereIsDory);
+        }
+
+        [Fact]
+        public void TestingIfOneOfConcretAnimalIsAnimal()
+        {
+            bool whatDoesRabbitMakeWhenTheyJump = false;
+            Rabbit peter = new Rabbit();
+
+            if (peter is Animal)
+            {
+                whatDoesRabbitMakeWhenTheyJump = true;
+            }
+
+            Assert.True(whatDoesRabbitMakeWhenTheyJump);
+        }
+
+        [Fact]
+        public void TestingIfSharkIsMammal()
+        {
+            bool isIt = false;
+            GreatWhiteShark bruce = new GreatWhiteShark();
+
+            if (bruce is Mammal)
+            {
+                isIt = true;
+            }
+
+            Assert.False(isIt);
+        }
+
+
     }
 }

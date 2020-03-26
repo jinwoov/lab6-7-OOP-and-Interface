@@ -14,6 +14,9 @@ namespace lab6_7_OOP_and_Interface.Classes
 
         public abstract void Migrating();
 
+        /// <summary>
+        /// Eating method that returns string and will be passed to all of its descendents.
+        /// </summary>
         public string Eating()
         {
             return "Hey I am eating here come back later";

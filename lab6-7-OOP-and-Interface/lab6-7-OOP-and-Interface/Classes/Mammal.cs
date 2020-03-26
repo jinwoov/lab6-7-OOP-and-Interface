@@ -10,19 +10,28 @@ namespace lab6_7_OOP_and_Interface.Classes
         public override int LegAmount { get; set; } = 4;
         public override string Habitat { get; set; } = "Land";
         public bool LiveBirth = true;
+        public virtual string Name { get; set; } =  "";
 
         public abstract bool PackAnimals { get; set; }
 
         public abstract string Bark();
+
+        // <summary>
+        /// Method that will be shared by other descendents and when called by child, it will know this method
+        /// </summary>
         public void Walking()
         {
-            Console.WriteLine("Walking like a McJagger");
+            Console.WriteLine($" {Name} is walking like a McJagger");
         }
-        public abstract void Hunting();
+
+        /// <summary>
+        /// Method that originally from `Animal`, and it will be overriden and return a different string;
+        /// </summary>
         public override sealed string Sleeping()
         {
             return "Zzz to the dream land";
         }
+        public abstract void Hunting();
 
     }
 }
