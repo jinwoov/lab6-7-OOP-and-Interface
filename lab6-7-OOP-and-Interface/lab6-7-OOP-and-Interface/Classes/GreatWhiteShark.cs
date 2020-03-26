@@ -25,7 +25,7 @@ namespace lab6_7_OOP_and_Interface.Classes
         }
 
         /// <summary>
-        /// Method that is unique to `GreatWhiteShar` is returning a string in console line
+        /// Method that is unique to `GreatWhiteShark` is returning a string in console line
         /// </summary>
         public void ThemeSong()
         {

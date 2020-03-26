@@ -15,11 +15,18 @@ namespace lab6_7_OOP_and_Interface.Classes
         public abstract bool PackAnimals { get; set; }
 
         public abstract string Bark();
+
+        // <summary>
+        /// Method that will be shared by other descendents and when called by child, it will know this method
+        /// </summary>
         public void Walking()
         {
             Console.WriteLine($" {Name} is walking like a McJagger");
         }
-        public abstract void Hunting();
+
+        // <summary>
+        /// Method that will be overriden from `Animal` class and will return different string;
+        /// </summary>
         public override sealed string Sleeping()
         {
             return "Zzz to the dream land";
