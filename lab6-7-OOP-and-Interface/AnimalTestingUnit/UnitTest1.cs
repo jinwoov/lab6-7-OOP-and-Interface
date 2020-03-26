@@ -7,7 +7,68 @@ namespace AnimalTestingUnit
     public class UnitTest1
     {
         [Fact]
-        public void TestingForBarkFromMammal()
+        public void IsBearDomesticatable()
+        {
+            Bear bear = new Bear();
+            bool canIKeepTheCub = bear.Domesticatable;
+
+            Assert.False(canIKeepTheCub);
+        }
+
+        [Fact]
+        public void IsBearCampingDestroyerUnlikeTiger() 
+        {
+            Bear bear = new Bear();
+            bool canIKeepTheCub = bear.CampingCrasher;
+
+            Assert.True(canIKeepTheCub);
+        }
+
+        [Fact]
+        public void WhatBloodTempDoesTigerHave() 
+        {
+            Tiger tiger = new Tiger();
+
+            string bloodType = tiger.BloodTemperature;
+
+            Assert.Equal("Warm", bloodType);
+        }
+
+        [Fact]
+        public void CanTigerSleep() 
+        {
+            Tiger tiger = new Tiger();
+
+            string outcome = tiger.Sleeping();
+
+            Assert.Equal("Zzz to the dream land", outcome);
+        }
+
+        [Fact]
+        public void WhatIsHabitatForLion() 
+        {
+            Lion lion = new Lion();
+            string where = lion.Habitat;
+            string myGuess = "Land";
+
+            Assert.Equal(myGuess, where);
+        }
+
+        [Fact]
+        public void DoesLionHaveFourLeg()
+        {
+            Lion lion = new Lion();
+            bool result = false;
+            if(lion.LegAmount == 4)
+            {
+                result = true;
+            }
+
+            Assert.True(result);
+        }
+
+        [Fact]
+        public void TestingForBarkFromMammal() 
         {
             Wolf wolf = new Wolf();
             string anySound = wolf.Bark();
@@ -15,14 +76,17 @@ namespace AnimalTestingUnit
             Assert.Equal("Rawr", anySound);
         }
 
-        [Fact] //?
-        public void DoesFishSleepWorldMystery()
+        [Fact]
+        public void IsWolfPredatorOrPrey()
         {
-            Humuhumunukunukuapua_a tooLong = new Humuhumunukunukuapua_a();
+            Wolf wolf = new Wolf();
+            var answer = 5;
+            if (wolf.PredatorPrey is "Predator")
+            {
+                answer -= 5;
+            }
 
-            string finallySolved = tooLong.Sleeping();
-
-            Assert.Equal("I dont sleep I keep my eyes wide open", finallySolved);
+            Assert.Equal(0, answer);
         }
 
         [Fact]
@@ -34,14 +98,15 @@ namespace AnimalTestingUnit
             Assert.Equal(4, leg);
         }
 
-        [Fact]
-        public void WhatIsHabitatForLion()
-        {
-            Lion lion = new Lion();
-            string where = lion.Habitat;
-            string myGuess = "Land";
 
-            Assert.Equal(myGuess, where);
+        [Fact] //?
+        public void DoesFishSleepWorldMystery()
+        {
+            Humuhumunukunukuapua_a tooLong = new Humuhumunukunukuapua_a();
+
+            string finallySolved = tooLong.Sleeping();
+
+            Assert.Equal("I dont sleep I keep my eyes wide open", finallySolved);
         }
 
         [Fact]
@@ -67,14 +132,7 @@ namespace AnimalTestingUnit
             Assert.False(beforeTransition);
         }
 
-        [Fact]
-        public void IsBearDomesticatable()
-        {
-            Bear bear = new Bear();
-            bool canIKeepTheCub = bear.Domesticatable;
 
-            Assert.False(canIKeepTheCub);
-        }
 
         [Fact]
         public void HowAboutPeterRabbitCanIKeepIt()
@@ -94,15 +152,6 @@ namespace AnimalTestingUnit
             Assert.Equal("Vegetation", cow.Food);
         }
 
-        [Fact]
-        public void WhatBloodTempDoesTigerHave()
-        {
-            Tiger tiger = new Tiger();
-
-            string bloodType = tiger.BloodTemperature;
-
-            Assert.Equal("Warm", bloodType);
-        }
 
         [Fact]
         public void FindingNemoQuoteCheckingItFromMarineClass()
@@ -175,15 +224,15 @@ namespace AnimalTestingUnit
         [Fact]
         public void TestingIfOneOfConcretAnimalIsAnimal()
         {
-            string whatDoesRabbitMakeWhenTheyJump = "";
+            bool whatDoesRabbitMakeWhenTheyJump = false;
             Rabbit peter = new Rabbit();
 
             if (peter is Animal)
             {
-                whatDoesRabbitMakeWhenTheyJump = peter.Jumping();
+                whatDoesRabbitMakeWhenTheyJump = true;
             }
 
-            Assert.Equal("Hip hop Hipty hop", whatDoesRabbitMakeWhenTheyJump);
+            Assert.True(whatDoesRabbitMakeWhenTheyJump);
         }
 
         [Fact]

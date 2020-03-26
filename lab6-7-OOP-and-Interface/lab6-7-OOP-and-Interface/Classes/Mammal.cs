@@ -31,6 +31,7 @@ namespace lab6_7_OOP_and_Interface.Classes
         {
             return "Zzz to the dream land";
         }
+        public abstract void Hunting();
 
     }
 }
