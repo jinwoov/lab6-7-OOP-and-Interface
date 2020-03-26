@@ -10,13 +10,22 @@ namespace lab6_7_OOP_and_Interface
         static void Main(string[] args)
         {
             Console.WriteLine("Showing the example of inheritance");
-            Classes();
+            InheritanceExample();
             Console.WriteLine("-----------------------------------");
 
             Console.WriteLine("Showing the example of interface");
             TheInterFace();
+            Console.WriteLine("-----------------------------------");
+
+            Console.WriteLine("Showing the example of polymorphism");
+            Polymorphism();
+            Console.WriteLine("-----------------------------------");
+
         }
 
+        /// <summary>
+        /// This is the method that show case how spcific animal can access interface  IKingOfAnimals.
+        /// </summary>
         static void TheInterFace()
         {
             IKingOfAnimals[] king = new IKingOfAnimals[2];
@@ -42,7 +51,10 @@ namespace lab6_7_OOP_and_Interface
             }
         }
 
-        static void Classes()
+        /// <summary>
+        /// This method examplifies all the animals being able to access method that was declared in mammal class.
+        /// </summary>
+        static void InheritanceExample()
         {
             Mammal[] mammal = new Mammal[3];
 
@@ -54,6 +66,19 @@ namespace lab6_7_OOP_and_Interface
             {
                mammal[i].Walking();
             }
+        }
+        
+        static void Polymorphism()
+        {
+            Cow moo = new Cow();
+
+            Console.WriteLine("This is without polymorphism");
+            Console.WriteLine(moo.Jumping());
+
+            Rabbit peter = new Rabbit();
+
+            Console.WriteLine("This is with polymorphism applied");
+            Console.WriteLine(peter.Jumping());
         }
     }
 }
