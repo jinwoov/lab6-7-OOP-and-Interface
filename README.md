@@ -63,12 +63,13 @@ OOP stands for object oriented program and it has four imperative component, inc
 ### Interface 
 Interface is a another way for you to inherit the behavior to the class and you can utilize its to group with other classes that took in inheritance from the parent class. Class that inherits interface must use methods that is in the interface. 
 
-For this Application interface is applied in Lion and have lion implement methods that are in the `ISwim` and `IKingOfAnimals`. Since lion can't swim, `ISwim` is shown console with string different from great white shark. Great white shark has both interfaces applied as well but is inherited from `Fish`. This is true as great white shark can swim and is one of the notorius king of the marine animal. 
+For this Application interface is applied in Lion and have lion implement methods that are in the `ISwim` and `IKingOfAnimals`. Since lion can't swim, `ISwim` is shown console with string different from great white shark. Great white shark has both interfaces applied as well but is inherited from `Fish`. This is true as great white shark can swim and is one of the notorious king of the marine animal. 
 
 ### Change Log
+- 1.6: *Updated README and updated UML with Interface properties/methods* March 26 2020
 - 1.5: *Created a method to display four pillars of OOP* March 26 2020
 - 1.4: *Implemented interface to the classes and unit test displays pass* March 26 2020
 - 1.3: *Link classes with inheritance and unit test passes* March 26 2020
 - 1.2: *Revised existing UML to label base and derived classes* - March 26 2020
-- 1.1: *Created libary of animals in the classes* - March 25 2020  
+- 1.1: *Created library of animals in the classes* - March 25 2020  
 - 1.0: *Created Repo, structuralized the application* - March 25 2020  
